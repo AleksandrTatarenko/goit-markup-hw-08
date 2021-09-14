@@ -1,0 +1,130 @@
+/*HEADER*/
+.header {
+  position: sticky;
+  z-index: 2;
+  top: -1px;
+  min-width: 1200px;
+  border-bottom: 1px solid #ececec;
+  background-color: $text-hero;
+}
+.header__container {
+  box-sizing: border-box;
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header__nav {
+  display: inline-flex;
+  min-height: 31px;
+  justify-content: center;
+  align-items: center;
+}
+.header__logo {
+  display: inline-flex;
+  margin-right: 93px;
+}
+.header__logo--first {
+  font-family: $font-l;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: $text-focus;
+}
+.header__logo--second {
+  color: $text-h;
+}
+.now {
+  position: relative;
+  color: $text-focus;
+  @include transition(color);
+  &::after {
+    content: '';
+    position: absolute;
+    top: 45px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: $text-focus;
+    opacity: 1;
+  }
+}
+.header__list {
+  display: inline-flex;
+  &--item:not(:last-child) {
+    margin-right: 50px;
+  }
+  &--item:last-child {
+    margin-right: 275px;
+  }
+}
+.link {
+  position: relative;
+  font-family: $font;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $text-h;
+  @include transition(color);
+  &:focus {
+    color: $text-focus;
+  }
+  &:hover {
+    color: $text-focus;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    top: 45px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: $text-focus;
+    opacity: 0;
+  }
+  &:hover::after {
+    opacity: 1;
+    @include transition(opacity);
+  }
+  &:focus::after {
+    opacity: 1;
+    @include transition(opacity);
+  }
+}
+.header__contacts {
+  display: inline-flex;
+}
+.header__contacts--connection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+  font-family: $font;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $text-p;
+  @include transition(color);
+  &:focus {
+    color: $text-focus;
+  }
+  &:hover {
+    color: $text-focus;
+  }
+}
+.header__mail {
+  fill: currentColor;
+  margin-right: 10px;
+}
+.header__phone {
+  fill: currentColor;
+  margin-right: 10px;
+}

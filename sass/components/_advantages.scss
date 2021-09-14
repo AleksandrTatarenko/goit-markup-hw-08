@@ -1,0 +1,82 @@
+/*Преимущества*/
+.advantages {
+  box-sizing: content-box;
+  min-width: 1200px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.advantages__container {
+  display: flex;
+  box-sizing: border-box;
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.advantages__hidden {
+  font-size: 0;
+}
+.advantages__list {
+  display: flex;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 0;
+  &--item::before {
+    display: block;
+    margin-bottom: 30px;
+    content: '';
+    height: 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    background-color: $background-team;
+    border-radius: 4px;
+  }
+  &--item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.antenna::before {
+  background-image: url(../img/antenna.svg);
+}
+.clock::before {
+  background-image: url(../img/clock.svg);
+}
+.diagram::before {
+  background-image: url(../img/diagram.svg);
+}
+.astronaut::before {
+  background-image: url(../img/astronaut.svg);
+}
+.advantages__name {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin-bottom: 0;
+  font-family: $font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $text-h;
+}
+.advantages__text {
+  margin-block-start: 10px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-family: $font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $text-p;
+}

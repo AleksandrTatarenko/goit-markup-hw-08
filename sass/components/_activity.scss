@@ -1,0 +1,66 @@
+/*Чем мы занимаемся*/
+.activity {
+  box-sizing: border-box;
+  min-width: 1200px;
+}
+.activity__container {
+  box-sizing: border-box;
+  padding-bottom: 94px;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.activity__idea {
+  display: block;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-family: $font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $text-h;
+}
+.activity__list {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+  &--item {
+    display: flex;
+    position: relative;
+    margin-top: 50px;
+    width: 370px;
+  }
+  &--item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.activity__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 224px;
+  width: 370px;
+  height: 70px;
+  background: $background-activity;
+}
+.activity__h {
+  font-family: Roboto;
+  font-weight: 700;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: $text-hero;
+  text-transform: uppercase;
+}

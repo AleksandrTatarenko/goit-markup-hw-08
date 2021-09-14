@@ -1,0 +1,19 @@
+"liveSassCompile.settings.formats":[
+        // This is Default.
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/goit-markup-hw-07/css"
+        },
+        // You can add more
+        {
+            "format": "compressed",
+            "extensionName": ".min.css",
+            "savePath": "/goit-markup-hw-07/css"
+        },
+         
+    ]
+        "liveSassCompile.settings.autoprefix": [
+        "> 1%",
+        "last 2 versions"
+   ]

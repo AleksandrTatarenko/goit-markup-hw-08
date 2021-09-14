@@ -1,0 +1,62 @@
+/*Герой*/
+.hero {
+  box-sizing: border-box;
+  min-height: 600px;
+  min-width: 1200px;
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('../img/hero-fone.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.hero__container {
+  box-sizing: border-box;
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero__idea {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-family: $font;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $text-hero;
+}
+.hero__button {
+  cursor: pointer;
+  display: flex;
+  box-sizing: border-box;
+  width: 200px;
+  height: 50px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  font-family: $font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87px;
+  letter-spacing: 0.06em;
+  background-color: $text-focus;
+  color: $text-hero;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}

@@ -1,0 +1,121 @@
+/*Наша команда*/
+.team {
+  box-sizing: border-box;
+  min-width: 1200px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: $background-team;
+}
+.team__container {
+  box-sizing: border-box;
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.team__idea {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-family: $font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $text-h;
+}
+.team__list {
+  display: flex;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+  margin-top: 50px;
+  &--item:not(:last-child) {
+    margin-right: 30px;
+  }
+  &--item {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background-color: $text-hero;
+  }
+}
+.team__item--container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.team__item--name {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-family: $font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $text-h;
+}
+.team__item--position {
+  margin-block-start: 10px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-family: $font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $text-p;
+}
+.team__sociallist {
+  display: flex;
+  margin-block-start: 16px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+  justify-content: center;
+  align-items: center;
+  &--item:not(:last-child) {
+    margin-right: 10px;
+  }
+  &--item {
+    display: flex;
+  }
+}
+.team__sociallink {
+  box-sizing: border-box;
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  color: $icon;
+  background-color: $text-hero;
+  @include transition(color);
+  @include transition(background-color);
+  &:focus {
+    color: $text-hero;
+    background-color: $text-focus;
+  }
+  &:hover {
+    color: $text-hero;
+    background-color: $text-focus;
+  }
+}
+.team__icon {
+  display: flex;
+  fill: currentColor;
+}

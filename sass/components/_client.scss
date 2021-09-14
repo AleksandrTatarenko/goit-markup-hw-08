@@ -1,0 +1,73 @@
+/*Постоянные клиенты*/
+.client {
+  block-size: border-box;
+  min-width: 1200px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: $text-hero;
+}
+.client__container {
+  box-sizing: border-box;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.client__idea {
+  display: block;
+  margin-block-start: 0px;
+  margin-block-end: 50px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-family: $font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $text-h;
+}
+.client__list {
+  display: flex;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+  &--item {
+    display: flex;
+    box-sizing: border-box;
+    width: 170px;
+    height: 90px;
+    border: 1px solid $icon;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+  }
+  &--item:not(:last-child) {
+    margin-right: 30px;
+  }
+  &--link {
+    display: flex;
+    width: 170px;
+    height: 90px;
+    justify-content: center;
+    align-items: center;
+    color: $icon;
+    @include transition(color);
+    @include transition(border);
+  }
+  &--link:focus {
+    color: $text-focus;
+    border: 1px solid $text-focus;
+  }
+  &--link:hover {
+    color: $text-focus;
+    border: 1px solid $text-focus;
+  }
+}
+.client__icon {
+  fill: currentColor;
+}

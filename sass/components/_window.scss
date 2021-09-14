@@ -1,0 +1,245 @@
+/*Модальное окно*/
+.backdrop-request {
+  z-index: 3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $backdrop-filter;
+  transition: $animation-dur $animation-type;
+}
+.backdrop-request.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.backdrop-request.is-hidden .window {
+  transform: translateX(-50%) translateY(-200%);
+}
+.window {
+  box-sizing: border-box;
+  @extend %window-centered;
+  @include transition(transform);
+  width: 528px;
+  height: 581px;
+  padding-top: 8px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  padding-right: 8px;
+  background-color: $text-hero;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  &__close {
+    display: flex;
+    margin-inline-start: auto;
+    padding-left: 8.5px;
+    padding-right: 8.5px;
+    padding-top: 8.5px;
+    padding-bottom: 8.5px;
+    box-sizing: border-box;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: $text-hero;
+    color: $button-close;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    @include transition(color);
+  }
+  &__close:focus {
+    color: $text-focus;
+    background-color: $text-hero;
+    box-shadow: none;
+    cursor: pointer;
+  }
+  &__close:hover {
+    color: $text-focus;
+    background-color: $text-hero;
+    box-shadow: none;
+    cursor: pointer;
+  }
+  &__icon {
+    fill: currentColor;
+  }
+}
+.window__idea {
+  display: flex;
+  flex-direction: column;
+  margin-block-start: 2px;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-family: $font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  color: $text-h;
+}
+.window__container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+}
+.window__note {
+  display: block;
+  margin-block-start: 0em;
+  margin-block-end: 4px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-family: $font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: $text-p;
+}
+.window {
+  &__label {
+    display: flex;
+    justify-content: center;
+    max-width: 448px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    flex-direction: column;
+    position: relative;
+    color: $text-h;
+    @include transition(color);
+  }
+  &__input:focus {
+    border-color: $text-focus;
+  }
+  &__input:hover {
+    border-color: $text-focus;
+  }
+  &__input:hover + .window__svg {
+    fill: $text-focus;
+  }
+  &__input:focus + .window__svg {
+    fill: $text-focus;
+  }
+}
+.window__input {
+  box-sizing: border-box;
+  padding-left: 42px;
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  @include transition(border);
+}
+.window__svg {
+  margin-left: 14px;
+  position: absolute;
+  fill: currentColor;
+}
+.window__textarea {
+  box-sizing: border-box;
+  resize: none;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+  width: 448px;
+  height: 120px;
+  font-family: $font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  color: $text-h;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+/*Checkbox*/
+.window__checkbox {
+  display: block;
+  margin-top: 20px;
+}
+.window__agree {
+  display: inline-flex;
+  margin-left: 12px;
+  margin-bottom: 30px;
+  align-items: center;
+  &--checkbox {
+    position: absolute;
+    width: 16px;
+    height: 15px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  &--checkbox:checked + .window__span {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $text-focus;
+    box-shadow: 0 0 0 2px $text-focus;
+    background-image: url(../img/checkbox-checked.svg);
+  }
+}
+.window__text {
+  display: inline-flex;
+  margin-left: 23px;
+  font-family: $font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $text-p;
+}
+.window__agreement {
+  display: inline-flex;
+  margin-left: 3px;
+  font-family: $font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $text-focus;
+  text-decoration: underline;
+}
+.window {
+  &__button {
+    cursor: pointer;
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin-left: 124px;
+    font-family: $font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: $text-hero;
+    background: $text-focus;
+    border: 0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+    @include transition(background-color);
+  }
+  &__button:focus {
+    background: #188ce8;
+  }
+  &__button:hover {
+    background: #188ce8;
+  }
+}
+.window__span {
+  cursor: pointer;
+  box-sizing: border-box;
+  position: absolute;
+  width: 16px;
+  height: 15px;
+  border-radius: 2px;
+  background-color: $text-hero;
+  box-shadow: 0 0 0 2px $text-h;
+}
