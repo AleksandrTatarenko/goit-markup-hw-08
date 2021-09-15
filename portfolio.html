@@ -12,31 +12,69 @@
 </head>
 <body>
     <header class="header">
-    <div class="header__container">
-        <nav class="header__nav">
-            <div class="header__logo">
-                <a class="header__logo--first" href="./index.html"> Web<span class="header__logo--second">Studio</span></a>
-            </div>
-            <ul class="header__list">
-                <li class="header__list--item"><a class="link" href="./index.html">Студия</a>
-                </li>
-                <li class="header__list--item"><a class="link" href="./portfolio.html"> <span class="now">Портфолио</span></a></li>
-                <li class="header__list--item"><a class="link" href="">Контакты</a></li>
-            </ul>
-            <ul class="header__contacts">
-                <li><a class="header__contacts--connection" href="mailto:info@devstudio.com">
-                        <svg class="header__mail" width="16" height="12">
-                            <use href="./img/symbol-defs.svg#mail"></use>
-                        </svg>info@devstudio.com</a></li>
-                <li><a class="header__contacts--connection" href="tel:+380961111111">
-                        <svg class="header__phone" width="10" height="16">
-                            <use href="./img/symbol-defs.svg#phone"></use>
-                        </svg>+38 096 111 11 11</a></li>
-            </ul>
-        </nav>
-    </div>
+        <div class="header__container">
+            <nav class="header__nav">
+                <div class="header__logo">
+                    <a class="header__logo--first" href="./index.html"> Web<span
+                            class="header__logo--second">Studio</span></a>
+                </div>
+                <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg class="menu-toggle__icon" width="40" height="40" fill="currentColor" viewBox="0 0 20 20">
+                        <use href="./img/symbol-defs.svg#menu"></use>
+                    </svg>
+                </button>
+                <ul class="header__list">
+                    <li class="header__list--item"><a class="link" href="./index.html">Студия</a>
+                    </li>
+                    <li class="header__list--item"><a class="link" href="./portfolio.html"> <span class="now">Портфолио</span></a></li>
+                    <li class="header__list--item"><a class="link" href="">Контакты</a></li>
+                </ul>
+                <ul class="header__contacts">
+                    <li><a class="header__contacts--connection" href="mailto:info@devstudio.com">
+                            <svg class="header__mail" width="16" height="12">
+                                <use href="./img/symbol-defs.svg#mail"></use>
+                            </svg>info@devstudio.com</a></li>
+                    <li><a class="header__contacts--connection" href="tel:+380961111111">
+                            <svg class="header__phone" width="10" height="16">
+                                <use href="./img/symbol-defs.svg#phone"></use>
+                            </svg>+38 096 111 11 11</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
+        <div class="menu-container js-menu-container">
+            <button class="menu-toggle js-close-menu">
+                <svg class="mobile__icon" width="19" height="19">
+                    <use href="./img/symbol-defs.svg#close"></use>
+                </svg>
+            </button>
+            <ul class="mobile__list">
+                <li class="mobile__list--item"><a class="mobile__link" href="./index.html"> <span class="now">Студия</span></a>
+                </li>
+                <li class="mobile__list--item"><a class="mobile__link" href="./portfolio.html">Портфолио</a></li>
+                <li class="mobile__list--item"><a class="mobile__link" href="">Контакты</a></li>
+            </ul>
+            <ul class="mobile__contacts">
+                <li>
+                    <a class="mobile__contacts--connection phone" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+                <li>
+                    <a class="mobile__contacts--connection mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+            </ul>
+            <ul class="mobile__social">
+                <li class="mobile__social--item"><a class="mobile__href" href="https://www.instagram.com/?hl=ru">Intagram</a>
+                </li>
+                <li class="mobile__social--item"><span class="column"></span></li>
+                <li class="mobile__social--item"><a class="mobile__href" href="https://twitter.com/?lang=ru">Twiter</a></li>
+                <li class="mobile__social--item"><span class="column"></span></li>
+                <li class="mobile__social--item"><a class="mobile__href" href="https://www.facebook.com/">Facebook</a></li>
+                <li class="mobile__social--item"><span class="column"></span></li>
+                <li class="mobile__social--item"><a class="mobile__href" href="https://www.linkedin.com/login/ru">LinkedIn</a>
+                </li>
+            </ul>
+        </div>
         <section class="menu">
            <div class="menu__container">
                 <ul class="menu__list">
@@ -50,7 +88,7 @@
                     <li class="product__list--item">
                         <a href="#" class="product__link">
                             <div class="product__img">
-                                <img src="./img/technocrack.jpg" alt="Технокряк">
+                                <img class='product__image'src="./img/technocrack.jpg" alt="Технокряк">
                                 <div class="product__overlay">
                                     <p class="product__overlay--text">Технокряк это современная площадка распространения коронавируса.
                                         Компании
@@ -68,7 +106,7 @@
                     <li class="product__list--item">
                         <a href="#" class="product__link">
                             <div class="product__img">
-                                <img src="./img/poster.jpg" alt="Постер">
+                                <img class='product__image' src="./img/poster.jpg" alt="Постер">
                                 <div class="product__overlay">
                                     <p class="product__overlay--text">Технокряк это современная площадка распространения коронавируса.
                                         Компании
@@ -86,7 +124,7 @@
                     <li class="product__list--item">
                         <a href="#" class="product__link">
                             <div class="product__img">
-                                <img src="./img/restaurant.jpg" alt="Ресторан">
+                                <img class='product__image' src="./img/restaurant.jpg" alt="Ресторан">
                                 <div class="product__overlay">
                                     <p class="product__overlay--text">Технокряк это современная площадка распространения коронавируса.
                                     Компании
@@ -103,7 +141,7 @@
                     <li class="product__list--item">
                         <a href="#" class="product__link">
                             <div class="product__img">
-                                <img src="./img/project_prime.jpg" alt="Проект Prime">
+                                <img class='product__image' src="./img/project_prime.jpg" alt="Проект Prime">
                                 <div class="product__overlay">
                                     <p class="product__overlay--text">Технокряк это современная площадка распространения коронавируса.
                                         Компании
@@ -121,7 +159,7 @@
                     <li class="product__list--item">
                         <a href="#" class="product__link">
                             <div class="product__img">
-                                <img src="./img/project_boxes.jpg" alt="Проект Boxes">
+                                <img class='product__image' src="./img/project_boxes.jpg" alt="Проект Boxes">
                                 <div class="product__overlay">
                                     <p class="product__overlay--text">Технокряк это современная площадка распространения коронавируса.
                                         Компании
@@ -139,7 +177,7 @@
                     <li class="product__list--item">
                         <a href="#" class="product__link">
                             <div class="product__img">
-                                <img src="./img/inspiration.jpg" alt="Inspiration has no Borders">
+                                <img class='product__image' src="./img/inspiration.jpg" alt="Inspiration has no Borders">
                                 <div class="product__overlay">
                                     <p class="product__overlay--text">Технокряк это современная площадка распространения коронавируса.
                                         Компании
@@ -157,7 +195,7 @@
                     <li class="product__list--item">
                         <a href="#" class="product__link">
                             <div class="product__img">
-                                <img src="./img/edition.jpg" alt="Издание Limited Edition">
+                                <img class='product__image' src="./img/edition.jpg" alt="Издание Limited Edition">
                                 <div class="product__overlay">
                                     <p class="product__overlay--text">Технокряк это современная площадка распространения коронавируса.
                                         Компании
@@ -175,7 +213,7 @@
                     <li class="product__list--item">
                         <a href="#" class="product__link">
                             <div class="product__img">
-                                <img src="./img/project_lab.jpg" alt="Проект LAB">
+                                <img class='product__image' src="./img/project_lab.jpg" alt="Проект LAB">
                                 <div class="product__overlay">
                                     <p class="product__overlay--text">Технокряк это современная площадка распространения коронавируса.
                                         Компании
@@ -193,7 +231,7 @@
                     <li class="product__list--item">
                         <a href="#" class="product__link">
                             <div class="product__img">
-                                <img src="./img/application.jpg" alt="Growing Business">
+                                <img class='product__image' src="./img/application.jpg" alt="Growing Business">
                                 <div class="product__overlay">
                                     <p class="product__overlay--text">Технокряк это современная площадка распространения коронавируса.
                                         Компании
@@ -215,11 +253,13 @@
     <footer class="footer">
         <div class="footer__container">
             <div>
-                <a class="header__logo--first" href="./index.html"> Web<span class="footer__logo">Studio</span></a>
+                <a class="footer__logo--first" href="./index.html"> Web<span class="footer__logo">Studio</span></a>
                 <address>
-                    <p class="location">г. Киев, пр-т Леси Украинки, 26</p>
-                    <a class="contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                    <a class="contacts" href="tel:+380961111111">+38 096 111 11 11</a>
+                    <ul class="footer__ul">
+                        <li><a class="location" href="">г. Киев, пр-т Леси Украинки, 26</a></li>
+                        <li><a class="contacts" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li><a class="contacts" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                    </ul>
                 </address>
             </div>
             <div class="footer__comein">

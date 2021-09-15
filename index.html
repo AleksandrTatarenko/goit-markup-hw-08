@@ -17,6 +17,11 @@
                 <div class="header__logo">
                     <a class="header__logo--first" href="./index.html"> Web<span class="header__logo--second">Studio</span></a>
                 </div>
+                <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg class="menu-toggle__icon" width="40" height="40" fill="currentColor" viewBox="0 0 20 20">
+                        <use href="./img/symbol-defs.svg#menu"></use>
+                    </svg>
+                </button>
                 <ul class="header__list">
                     <li class="header__list--item"><a class="link" href="./index.html"> <span class="now">Студия</span></a></li>
                     <li class="header__list--item"><a class="link" href="./portfolio.html">Портфолио</a></li>
@@ -24,18 +29,47 @@
                 </ul>
                 <ul class="header__contacts">
                     <li><a class="header__contacts--connection" href="mailto:info@devstudio.com">
-                        <svg class="header__mail" width="16" height="12">
-                            <use href="./img/symbol-defs.svg#mail"></use>
-                        </svg>info@devstudio.com</a></li>
+                            <svg class="header__mail" width="16" height="12">
+                                <use href="./img/symbol-defs.svg#mail"></use>
+                            </svg>info@devstudio.com</a></li>
                     <li><a class="header__contacts--connection" href="tel:+380961111111">
-                        <svg class="header__phone" width="10" height="16">
-                            <use href="./img/symbol-defs.svg#phone"></use>
-                        </svg>+38 096 111 11 11</a></li>
+                            <svg class="header__phone" width="10" height="16">
+                                <use href="./img/symbol-defs.svg#phone"></use>
+                            </svg>+38 096 111 11 11</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
+        <div class="menu-container js-menu-container">
+            <button class="menu-toggle js-close-menu">
+                <svg class="mobile__icon" width="19" height="19">
+                    <use href="./img/symbol-defs.svg#close"></use>
+                </svg>
+            </button>
+            <ul class="mobile__list">
+                <li class="mobile__list--item"><a class="mobile__link" href="./index.html"> <span class="now">Студия</span></a></li>
+                <li class="mobile__list--item"><a class="mobile__link" href="./portfolio.html">Портфолио</a></li>
+                <li class="mobile__list--item"><a class="mobile__link" href="">Контакты</a></li>
+            </ul>
+            <ul class="mobile__contacts">
+                <li>
+                    <a class="mobile__contacts--connection phone" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+                <li>
+                    <a class="mobile__contacts--connection mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+            </ul>
+            <ul class="mobile__social">
+                <li class="mobile__social--item"><a class="mobile__href" href="https://www.instagram.com/?hl=ru">Intagram</a></li>
+                <li class="mobile__social--item"><span class="column"></span></li>
+                <li class="mobile__social--item"><a class="mobile__href" href="https://twitter.com/?lang=ru">Twiter</a></li>
+                <li class="mobile__social--item"><span class="column"></span></li>
+                <li class="mobile__social--item"><a class="mobile__href" href="https://www.facebook.com/">Facebook</a></li>
+                <li class="mobile__social--item"><span class="column"></span></li>
+                <li class="mobile__social--item"><a class="mobile__href" href="https://www.linkedin.com/login/ru">LinkedIn</a></li>
+            </ul>
+        </div>
         <!--Герой-->
         <section class="hero">
             <div class="hero__container">
@@ -98,7 +132,7 @@
                 <h2 class="team__idea">Наша команда</h2>
                 <ul class="team__list">
                     <li class="team__list--item">
-                        <img src="./img/igor.png" width="270" alt="Фото">
+                        <img class="team__image" src="./img/igor.png" alt="Фото">
                         <div class="team__item--container">
                             <h3 class="team__item--name">Игорь Демьяненко</h3>
                             <p class="team__item--position">Product Designer</p>
@@ -135,7 +169,7 @@
                         </div>
                     </li>
                     <li class="team__list--item">
-                        <img src="./img/olga.png" width="270" alt="Фото">
+                        <img class="team__image" src="./img/olga.png" alt="Фото">
                         <div class="team__item--container">
                             <h3 class="team__item--name">Ольга Репина</h3>
                             <p class="team__item--position">Frontend Developer</p>
@@ -172,7 +206,7 @@
                         </div>
                     </li>
                     <li class="team__list--item">
-                        <img src="./img/nicolay.png" width="270" alt="Фото">
+                        <img class="team__image" src="./img/nicolay.png" alt="Фото">
                         <div class="team__item--container">
                             <h3 class="team__item--name">Николай Тарасов</h3>
                             <p class="team__item--position">Marketing</p>
@@ -209,7 +243,7 @@
                         </div>
                     </li>
                     <li class="team__list--item">
-                        <img src="./img/mihail.png" width="270" alt="Фото">
+                        <img class="team__image" src="./img/mihail.png" alt="Фото">
                         <div class="team__item--container">
                             <h3 class="team__item--name">Михаил Ермаков</h3>
                             <p class="team__item--position">UI Designer</p>
@@ -408,5 +442,9 @@
         </div>
     </div>
     <script src="./window.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="./mobile-menu.js"></script>
 </body>
 </html>

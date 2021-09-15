@@ -1,62 +1,65 @@
 /*Герой*/
 .hero {
-  box-sizing: border-box;
-  min-height: 600px;
-  min-width: 1200px;
-  max-width: 1600px;
+  max-height: 400px;
+  max-width: 480px;
   margin-right: auto;
   margin-left: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  text-align: center;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url('../img/hero-fone.jpg');
+    url('../img/mobile-hero-fone.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .hero__container {
   box-sizing: border-box;
-  max-width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  min-height: 400px;
+  min-weight: 450px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 118px;
+  padding-bottom: 118px;
 }
 .hero__idea {
-  margin-top: 0;
+  display: block;
   margin-bottom: 30px;
   font-family: $font;
   font-style: normal;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: $text-hero;
 }
 .hero__button {
-  cursor: pointer;
-  display: flex;
-  box-sizing: border-box;
-  width: 200px;
-  height: 50px;
-  margin: auto;
-  justify-content: center;
-  align-items: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
+  background-color: $text-focus;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-style: none;
   font-family: $font;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
-  line-height: 1.87px;
+  line-height: 1.87;
   letter-spacing: 0.06em;
-  background-color: $text-focus;
   color: $text-hero;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+  @include transition(background-color);
+  &:focus {
+    background-color: $background-focus;
+  }
+  &:hover {
+    background-color: $background-focus;
+  }
 }
