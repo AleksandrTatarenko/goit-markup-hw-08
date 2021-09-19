@@ -30,11 +30,11 @@
                     <li class="header__list--item"><a class="link" href="">Контакты</a></li>
                 </ul>
                 <ul class="header__contacts">
-                    <li><a class="header__contacts--connection" href="mailto:info@devstudio.com">
+                    <li class="header__contacts--item"><a class="header__contacts--connection" href="mailto:info@devstudio.com">
                             <svg class="header__mail" width="16" height="12">
                                 <use href="./img/symbol-defs.svg#mail"></use>
                             </svg>info@devstudio.com</a></li>
-                    <li><a class="header__contacts--connection" href="tel:+380961111111">
+                    <li class="header__contacts--item"><a class="header__contacts--connection" href="tel:+380961111111">
                             <svg class="header__phone" width="10" height="16">
                                 <use href="./img/symbol-defs.svg#phone"></use>
                             </svg>+38 096 111 11 11</a></li>
@@ -252,52 +252,54 @@
     </main>
     <footer class="footer">
         <div class="footer__container">
-            <div>
-                <a class="footer__logo--first" href="./index.html"> Web<span class="footer__logo">Studio</span></a>
-                <address>
-                    <ul class="footer__ul">
-                        <li><a class="location" href="">г. Киев, пр-т Леси Украинки, 26</a></li>
-                        <li><a class="contacts" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                        <li><a class="contacts" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <div class="tablet__container">
+                <div>
+                    <a class="footer__logo--first" href="./index.html"> Web<span class="footer__logo">Studio</span></a>
+                    <address>
+                        <ul class="footer__ul">
+                            <li><a class="location" href="">г. Киев, пр-т Леси Украинки, 26</a></li>
+                            <li><a class="contacts" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                            <li><a class="contacts" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="footer__comein">
+                    <h3 class="footer__wellcome">Присоединяйтесь</h3>
+                    <ul class="footer__list">
+                        <li class="footer__list--item">
+                            <a class="footer__link" href="https://www.instagram.com/?hl=ru">
+                                <svg class="footer__icon" width="20" height="20">
+                                    <use href="./img/symbol-defs.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__list--item">
+                            <a class="footer__link" href="https://twitter.com/?lang=ru">
+                                <svg class="footer__icon" width="20" height="20">
+                                    <use href="./img/symbol-defs.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__list--item">
+                            <a class="footer__link" href="https://uk-ua.facebook.com/">
+                                <svg class="footer__icon" width="20" height="20">
+                                    <use href="./img/symbol-defs.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__list--item">
+                            <a class="footer__link" href="https://ru.linkedin.com/">
+                                <svg class="footer__icon" width="20" height="20">
+                                    <use href="./img/symbol-defs.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
                     </ul>
-                </address>
-            </div>
-            <div class="footer__comein">
-                <h3 class="footer__wellcome">Присоединяйтесь</h3>
-                <ul class="footer__list">
-                    <li class="footer__list--item">
-                        <a class="footer__link" href="https://www.instagram.com/?hl=ru">
-                            <svg class="footer__icon" width="20" height="20">
-                                <use href="./img/symbol-defs.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer__list--item">
-                        <a class="footer__link" href="https://twitter.com/?lang=ru">
-                            <svg class="footer__icon" width="20" height="20">
-                                <use href="./img/symbol-defs.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer__list--item">
-                        <a class="footer__link" href="https://uk-ua.facebook.com/">
-                            <svg class="footer__icon" width="20" height="20">
-                                <use href="./img/symbol-defs.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer__list--item">
-                        <a class="footer__link" href="https://ru.linkedin.com/">
-                            <svg class="footer__icon" width="20" height="20">
-                                <use href="./img/symbol-defs.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+                </div>
             </div>
             <div class="footer__join">
                 <h3 class="footer__join--head">Подпишитесь на рассылку</h3>
-                <form>
+                <form class="footer__form">
                     <div class="footer__input">
                         <input class="footer__mail" type="text" placeholder="E-mail">
                     </div>

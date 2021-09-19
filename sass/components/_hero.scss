@@ -1,23 +1,14 @@
 /*Герой*/
 .hero {
-  max-height: 400px;
-  max-width: 480px;
+  height: 100%;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url('../img/mobile-hero-fone.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 .hero__container {
   box-sizing: border-box;
-  min-height: 400px;
-  min-weight: 450px;
+  height: 400px;
+  width: 480px;
   padding-left: 60px;
   padding-right: 60px;
   padding-top: 118px;
@@ -25,6 +16,7 @@
 }
 .hero__idea {
   display: block;
+  margin-top: 0;
   margin-bottom: 30px;
   font-family: $font;
   font-style: normal;
@@ -61,5 +53,40 @@
   }
   &:hover {
     background-color: $background-focus;
+  }
+}
+@media (max-width: 767px) {
+  .hero {
+    max-width: 480px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../img/mobile-hero-fone.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+@media (min-width: 768px) {
+  .hero {
+    max-width: 768px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../img/tablet-hero-fone.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+@media (min-width: 768px) {
+  .hero__container {
+    width: 768px;
+    padding-left: 204px;
+    padding-right: 204px;
   }
 }

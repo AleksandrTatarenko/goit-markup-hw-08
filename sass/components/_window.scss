@@ -8,6 +8,7 @@
   height: 100%;
   background-color: $backdrop-filter;
   transition: $animation-dur $animation-type;
+  overflow-y: scroll;
 }
 .backdrop-request.is-hidden {
   opacity: 0;
@@ -20,12 +21,13 @@
   box-sizing: border-box;
   @extend %window-centered;
   @include transition(transform);
-  width: 528px;
-  height: 581px;
+  display: block;
+  width: 100%;
+  max-width: 450px;
   padding-top: 8px;
-  padding-bottom: 40px;
-  padding-left: 40px;
   padding-right: 8px;
+  padding-left: 40px;
+  padding-bottom: 40px;
   background-color: $text-hero;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -33,10 +35,7 @@
   &__close {
     display: flex;
     margin-inline-start: auto;
-    padding-left: 8.5px;
-    padding-right: 8.5px;
-    padding-top: 8.5px;
-    padding-bottom: 8.5px;
+    padding: 8.5px;
     box-sizing: border-box;
     position: relative;
     width: 30px;
@@ -83,8 +82,12 @@
   flex-direction: column;
   margin-top: 12px;
 }
+.window__form {
+  margin-right: 32px;
+}
 .window__note {
   display: block;
+  margin-right: 32px;
   margin-block-start: 0em;
   margin-block-end: 4px;
   margin-inline-start: 0px;
@@ -101,7 +104,7 @@
   &__label {
     display: flex;
     justify-content: center;
-    max-width: 448px;
+    max-width: 100%;
     cursor: pointer;
     margin-bottom: 10px;
     flex-direction: column;
@@ -125,7 +128,8 @@
 .window__input {
   box-sizing: border-box;
   padding-left: 42px;
-  width: 448px;
+  margin-right: 32px;
+  width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
@@ -144,7 +148,7 @@
   padding-bottom: 12px;
   padding-left: 16px;
   padding-right: 16px;
-  width: 448px;
+  width: 100%;
   height: 120px;
   font-family: $font;
   font-style: normal;
@@ -188,8 +192,8 @@
   font-family: $font;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: $text-p;
 }
@@ -199,8 +203,8 @@
   font-family: $font;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: $text-focus;
   text-decoration: underline;
@@ -209,9 +213,10 @@
   &__button {
     cursor: pointer;
     display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 200px;
     height: 50px;
-    margin-left: 124px;
     font-family: $font;
     font-style: normal;
     font-weight: bold;
