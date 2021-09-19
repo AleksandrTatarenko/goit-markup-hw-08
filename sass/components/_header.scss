@@ -172,7 +172,7 @@
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: $text-hero;
-  z-index: 999;
+  z-index: 5;
   transform: translateX(200%);
   transition: transform $animation-dur ease-in-out;
 }
