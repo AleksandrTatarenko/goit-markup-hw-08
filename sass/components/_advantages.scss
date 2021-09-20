@@ -92,3 +92,16 @@
     padding-bottom: 30px;
   }
 }
+@media (min-width: 1200px) {
+  .advantages__list {
+    &--item {
+      width: 270px;
+    }
+  }
+  .advantages__container {
+    box-sizing: border-box;
+    padding-top: 94px;
+    padding-bottom: 64px;
+    width: 1200px;
+  }
+}

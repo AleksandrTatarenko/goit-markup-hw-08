@@ -43,7 +43,6 @@
     color: $text-h;
   }
 }
-
 @media (min-width: 768px) {
   .header__container {
     padding-top: 21px;
@@ -147,17 +146,51 @@
     margin-right: 8px;
   }
 }
-@media (min-width: 1200px) {
-  .header__container {
-    width: 1200px;
-  }
-}
 @media (max-width: 767px) {
   .header__list {
     display: none;
   }
   .header__contacts {
     display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .header__container {
+    width: 1200px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+  .header__logo--first {
+    font-size: 26px;
+  }
+  .header__logo--second {
+    font-size: 26px;
+  }
+  .link::after {
+    top: 44px;
+  }
+  .now::after {
+    top: 44px;
+  }
+  .header__list {
+    margin-left: 93px;
+    margin-right: auto;
+  }
+  .header__contacts {
+    align-items: center;
+    justify-content: center;
+    &--item:not(:last-child) {
+      margin-right: 30px;
+      margin-bottom: 0;
+    }
+  }
+  .header__mail {
+    fill: currentColor;
+    margin-right: 10px;
+  }
+  .header__phone {
+    fill: currentColor;
+    margin-right: 10px;
   }
 }
 /*Мобильное меню*/

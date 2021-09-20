@@ -32,7 +32,7 @@
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   padding-inline-start: 0px;
-  margin-top: 50px;
+  margin-top: 30px;
   &--item {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -139,5 +139,22 @@
 @media (max-width: 767px) {
   .team__list--item:not(:last-child) {
     margin-bottom: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .team__container {
+    max-width: 1200px;
+    padding-top: 94px;
+    padding-bottom: 64px;
+  }
+  .team__idea {
+    font-size: 36px;
+  }
+  .team__list {
+    margin-top: 50px;
+    &--item {
+      max-width: 270px;
+      margin-bottom: 30px;
+    }
   }
 }

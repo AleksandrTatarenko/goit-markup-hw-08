@@ -67,4 +67,23 @@
   .menu__container {
     width: 768px;
   }
+  .menu__list {
+    margin-bottom: 40px;
+    &--item {
+      margin-bottom: 0px;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .menu__container {
+    width: 1200px;
+    padding-top: 94px;
+    padding-bottom: 64px;
+  }
+  .menu__list {
+    margin-bottom: 50px;
+    &--item {
+      margin-bottom: 0px;
+    }
+  }
 }

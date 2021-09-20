@@ -33,6 +33,27 @@
     background-size: cover;
   }
 }
+@media (min-width: 1200px) {
+  .hero {
+    max-width: 1600px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../img/hero-fone.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .hero__container {
+    width: 1200px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    padding-left: 452px;
+    padding-right: 452px;
+  }
+}
 @media (min-width: 768px) {
   .hero__container {
     width: 768px;
@@ -40,12 +61,16 @@
     padding-right: 204px;
   }
 }
+@media (max-width: 767px) {
+  .hero__container {
+    max-width: 480px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
 .hero__container {
   box-sizing: border-box;
   width: 100%;
-  max-width: 480px;
-  padding-left: 60px;
-  padding-right: 60px;
   padding-top: 118px;
   padding-bottom: 118px;
 }
@@ -88,5 +113,10 @@
   }
   &:hover {
     background-color: $background-focus;
+  }
+}
+@media (min-width: 1200px) {
+  .hero__idea {
+    font-size: 44px;
   }
 }

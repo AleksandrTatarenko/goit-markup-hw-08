@@ -81,3 +81,18 @@
     height: 92px;
   }
 }
+@media (min-width: 1200px) {
+  .client__container {
+    width: 1200px;
+    padding-top: 94px;
+    padding-bottom: 64px;
+  }
+  .client__list--link {
+    width: 170px;
+    height: 92px;
+  }
+  .client__idea {
+    font-size: 36px;
+    margin-block-end: 50px;
+  }
+}

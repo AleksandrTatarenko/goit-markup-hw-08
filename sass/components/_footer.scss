@@ -242,4 +242,55 @@
   .footer__comein {
     margin-left: 165px;
   }
+  .footer__box {
+    height: 127px;
+    margin-bottom: 60px;
+  }
+}
+@media (min-width: 1200px) {
+  .footer__container {
+    display: flex;
+    align-items: flex-start;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .footer__logo--first {
+    margin-left: 0;
+    margin-right: 86px;
+    font-size: 26px;
+  }
+  .footer__ul {
+    align-items: flex-start;
+    margin-bottom: 0;
+  }
+  .footer__comein {
+    align-items: flex-start;
+    margin-left: 0;
+    margin-left: 70px;
+  }
+  .footer__box {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 0;
+  }
+  .footer__wellcome {
+    margin-top: 12px;
+  }
+  .footer__form {
+    display: flex;
+    justify-content: space-between;
+    width: 570px;
+  }
+  .footer__input {
+    width: 358px;
+    margin-right: 12px;
+  }
+  .footer__join {
+    align-items: flex-start;
+  }
+  .footer__join--head {
+    margin-top: 12px;
+  }
 }

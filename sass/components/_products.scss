@@ -113,3 +113,14 @@
     max-width: 354px;
   }
 }
+@media (min-width: 1200px) {
+  .product__list--item {
+    max-width: 370px;
+  }
+  .product__link {
+    max-width: 370px;
+  }
+  .product__image {
+    max-width: 370px;
+  }
+}
