@@ -112,15 +112,22 @@
                 <h2 class="activity__idea">Чем мы занимаемся</h2>
                 <ul class="activity__list">
                     <li class="activity__list--item">
-                        <img src="./img/programing.png" width="370" alt="Программист работает за рабочим столом">
+                        <img src="./img/activity/app1x-min.jpg" srcset="./img/activity/app1x-min.jpg 1x, ./img/activity/app2x-min.jpg 2x" 
+                            width="100%" 
+                            alt="Программист работает за рабочим столом">
                         <div class="activity__box"><h3 class="activity__h">Десктопные приложения</h3></div>
                     </li>
                     <li class="activity__list--item">
-                        <img src="./img/designing.png" width="370" alt="Разработчик создает приложение для смартфона">
+                        <img src="./img/activity/mob-app1x-min.jpg" srcset="./img/activity/mob-app1x-min.jpg 1x, ./img/activity/mob-app2x-min.jpg 2x"
+                            width="100%" 
+                            alt="Разработчик создает приложение для смартфона">
                         <div class="activity__box"><h3 class="activity__h">Мобильные приложения</h3></div>
                     </li>
                     <li class="activity__list--item">
-                        <img src="./img/palette.png" width="370" alt="Дизайнер выбирает цвет в палитре">
+                        <img src="./img/activity/des1x-min.jpg"
+                            srcset="./img/activity/des1x-min.jpg 1x, ./img/activity/des2x-min.jpg 2x" 
+                            width="100%"
+                            alt="Дизайнер выбирает цвет в палитре">
                         <div class="activity__box"><h3 class="activity__h">Дизайнерские решения</h3></div>
                     </li>
                 </ul>
@@ -132,7 +139,12 @@
                 <h2 class="team__idea">Наша команда</h2>
                 <ul class="team__list">
                     <li class="team__list--item">
-                        <img class="team__image" src="./img/igor.png" alt="Фото">
+                        <picture>
+                            <source srcset="./img/igor-img/igor1x-min.jpg 1x, ./img/igor-img/igor2x-min.jpg 2x" media="(min-width:1200px)">
+                            <source srcset="./img/igor-img/igor-tab1x-min.jpg 1x, ./img/igor-img/igor-tab2x-min.jpg 2x" media="(min-width:768px)">
+                            <source srcset="./img/igor-img/igor-mob1x-min.jpg 1x, ./img/igor-img/igor-mob2x-min.jpg 2x">
+                            <img src="./img/igor-img/igor-mob1x-min.jpg" width="100%" alt="Фото">
+                        </picture>
                         <div class="team__item--container">
                             <h3 class="team__item--name">Игорь Демьяненко</h3>
                             <p class="team__item--position">Product Designer</p>
@@ -169,7 +181,12 @@
                         </div>
                     </li>
                     <li class="team__list--item">
-                        <img class="team__image" src="./img/olga.png" alt="Фото">
+                        <picture>
+                            <source srcset="./img/olga-img/olga1x-min.jpg 1x, ./img/olga-img/olga2x-min.jpg 2x" media="(min-width:1200px)">
+                            <source srcset="./img/olga-img/olga-tab1x-min.jpg 1x, ./img/olga-img/olga-tab2x-min.jpg 2x" media="(min-width:768px)">
+                            <source srcset="./img/olga-img/olga-mob1x-min.jpg 1x, ./img/olga-img/olga-mob2x-min.jpg 2x">
+                            <img src="./img/olga-img/olga-mob1x-min.jpg" width="100%" alt="Фото">
+                        </picture>
                         <div class="team__item--container">
                             <h3 class="team__item--name">Ольга Репина</h3>
                             <p class="team__item--position">Frontend Developer</p>
@@ -206,7 +223,12 @@
                         </div>
                     </li>
                     <li class="team__list--item">
-                        <img class="team__image" src="./img/nicolay.png" alt="Фото">
+                        <picture>
+                            <source srcset="./img/nik-img/nik1x-min.jpg 1x, ./img/nik-img/nik2x-min.jpg 2x" media="(min-width:1200px)">
+                            <source srcset="./img/nik-img/nik-tab1x-min.jpg 1x, ./img/nik-img/nik-tab2x-min.jpg 2x" media="(min-width:768px)">
+                            <source srcset="./img/nik-img/nik-mob1x-min.jpg 1x, ./img/nik-img/nik-mob2x-min.jpg 2x">
+                            <img src="./img/nik-img/nik-mob1x-min.jpg" width="100%" alt="Фото">
+                        </picture>
                         <div class="team__item--container">
                             <h3 class="team__item--name">Николай Тарасов</h3>
                             <p class="team__item--position">Marketing</p>
@@ -243,7 +265,12 @@
                         </div>
                     </li>
                     <li class="team__list--item">
-                        <img class="team__image" src="./img/mihail.png" alt="Фото">
+                        <picture>
+                            <source srcset="./img/mich-img/mich1x-min.jpg 1x, ./img/mich-img/mich2x-min.jpg 2x" media="(min-width:1200px)">
+                            <source srcset="./img/mich-img/mich-tab1x-min.jpg 1x, ./img/mich-img/mich-tab2x-min.jpg 2x" media="(min-width:768px)">
+                            <source srcset="./img/mich-img/mich-mob1x-min.jpg 1x, ./img/mich-img/mich-mob2x-min.jpg 2x">
+                            <img src="./img/mich-img/mich-mob1x-min.jpg" width="100%" alt="Фото">
+                        </picture>
                         <div class="team__item--container">
                             <h3 class="team__item--name">Михаил Ермаков</h3>
                             <p class="team__item--position">UI Designer</p>
