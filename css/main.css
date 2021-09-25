@@ -1904,6 +1904,44 @@ summary {
   transition: border 250ms linear;
 }
 
+@media (max-width: 450px) {
+  .client__list--link {
+    width: 181px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 396px) {
+  .client__list--link {
+    width: 158px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 350px) {
+  .client__list--link {
+    width: 142px;
+  }
+}
+
+@media (max-width: 320px) {
+  .client__list--link {
+    width: 130px;
+  }
+}
+
+@media (max-width: 294px) {
+  .client__list--link {
+    width: 116px;
+  }
+}
+
+@media (max-width: 266px) {
+  .client__list--link {
+    width: 102px;
+  }
+}
+
 .client__list--link:focus {
   color: #2196f3;
   border: 1px solid #2196f3;

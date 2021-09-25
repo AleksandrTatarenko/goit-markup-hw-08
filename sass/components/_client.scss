@@ -54,6 +54,26 @@
     color: $icon;
     @include transition(color);
     @include transition(border);
+    @media (max-width: 450px) {
+      width: 181px;
+      height: 80px;
+    }
+    @media (max-width: 396px) {
+      width: 158px;
+      height: 70px;
+    }
+    @media (max-width: 350px) {
+      width: 142px;
+    }
+    @media (max-width: 320px) {
+      width: 130px;
+    }
+    @media (max-width: 294px) {
+      width: 116px;
+    }
+    @media (max-width: 266px) {
+      width: 102px;
+    }
   }
   &--link:focus {
     color: $text-focus;
